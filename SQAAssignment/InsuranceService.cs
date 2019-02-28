@@ -12,24 +12,24 @@ namespace SQAAssignment
             float premium;
 
             if (gender == "female")
-	if ((age >= 18) && (age <= 30))
-                premium = 5.0f;
+                if ((age >= 18) && (age <= 30))
+                    premium = 5.0f;
+                else
+                    if (age >= 31)
+                    premium = 2.50f;
+                else
+                    premium = 0.0f;
             else
-        if (age >= 31)
-                premium = 2.50f;
+            if (gender == "male")
+                if ((age >= 18) && (age <= 35))
+                    premium = 6.0f;
+                else
+                   if (age >= 36)
+                    premium = 5.0f;
+                else
+                    premium = 0.0f;
             else
                 premium = 0.0f;
-else
-	if (gender == "male")
-	    if ((age >= 18) && (age <= 35))
-                premium = 6.0f;
-            else
-           if (age >= 36)
-                premium = 5.0f;
-            else
-                premium = 0.0f;
-else
-		premium = 0.0f;
 
             if (age >= 50)
                 premium = premium * 0.15f;
