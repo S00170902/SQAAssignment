@@ -53,6 +53,7 @@ namespace SQAAssignment
             Assert.AreEqual(expectedResult, actualResult);
         }
 
+        [Test]
         public static void male_40_5()
         {
             expectedResult = 5.0f;
@@ -61,6 +62,7 @@ namespace SQAAssignment
             Assert.AreEqual(expectedResult, actualResult);
         }
 
+        [Test]
         public static void male_17_0()
         {
             expectedResult = 0f;
@@ -69,6 +71,26 @@ namespace SQAAssignment
             Assert.AreEqual(expectedResult, actualResult);
         }
 
-      
+        [Test]
+        //Female over 50
+        public static void female_55_0()
+        {
+            expectedResult = 0.375f;
+            float actualResult = insuranceService.CalcPremium(55, "female");
+
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        //Male over 50
+        public static void male_55_0()
+        {
+            expectedResult = 0.75f;
+            float actualResult = insuranceService.CalcPremium(55, "male");
+
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+
     }
 }
