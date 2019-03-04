@@ -19,6 +19,7 @@ namespace SQAAssignment
         }
 
         [Test]
+        //Female ((age >= 18) && (age <= 30))
         public static void female_25_5()
         {
             expectedResult = 5f;
@@ -27,6 +28,7 @@ namespace SQAAssignment
             Assert.AreEqual(expectedResult, actualResult);
         }
         [Test]
+        //Female ((age >= 31) 
         public static void female_35_2_5()
         {
             expectedResult = 2.50f;
@@ -36,6 +38,7 @@ namespace SQAAssignment
         }
 
         [Test]
+        //Female ((age < 18)
         public static void female_17_0()
         {
             expectedResult = 0f;
@@ -45,6 +48,7 @@ namespace SQAAssignment
         }
 
         [Test]
+        //Male ((age >= 18) && (age <= 35))
         public static void male_30_6()
         {
             expectedResult = 6.0f;
@@ -54,6 +58,7 @@ namespace SQAAssignment
         }
 
         [Test]
+        //Male ((age >= 36)
         public static void male_40_5()
         {
             expectedResult = 5.0f;
@@ -63,6 +68,7 @@ namespace SQAAssignment
         }
 
         [Test]
+        //Male ((age < 18)
         public static void male_17_0()
         {
             expectedResult = 0f;
