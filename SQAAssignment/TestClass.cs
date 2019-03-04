@@ -79,7 +79,7 @@ namespace SQAAssignment
 
         [Test]
         //Female over 50
-        public static void female_55_0()
+        public static void female_55_0375()
         {
             expectedResult = 0.375f;
             float actualResult = insuranceService.CalcPremium(55, "female");
@@ -89,7 +89,7 @@ namespace SQAAssignment
 
         [Test]
         //Male over 50
-        public static void male_55_0()
+        public static void male_55_075()
         {
             expectedResult = 0.75f;
             float actualResult = insuranceService.CalcPremium(55, "male");
