@@ -29,9 +29,9 @@ namespace SQAAssignment
         }
         [Test]
         //Female ((age >= 31) 
-        public static void female_35_2_5()
+        public static void female_35_3_5()
         {
-            expectedResult = 2.50f;
+            expectedResult = 3.50f;
             float actualResult = insuranceService.CalcPremium(35, "female");
 
             Assert.AreEqual(expectedResult, actualResult);

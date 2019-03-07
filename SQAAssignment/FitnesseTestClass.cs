@@ -16,6 +16,7 @@ namespace SQAAssignment
 
         public float premium()
         {
+            ps.setproperties(gender, age);
             return ps.premium();
         }
     }
