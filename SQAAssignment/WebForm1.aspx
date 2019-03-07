@@ -7,12 +7,12 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" method="post" >
         <div>
             <asp:TextBox ID="age" runat="server"></asp:TextBox>
-            <asp:RadioButton ID="male" runat="server" GroupName="gender" Text="Male" OnCheckedChanged="rb_CheckedChanged" />
-            <asp:RadioButton ID="female" runat="server" GroupName="gender" Text="Female" OnCheckedChanged="rb_CheckedChanged" />
-            <asp:Button ID="submit" runat="server" Text="Submit" OnClick="submit_Click" />
+            <asp:RadioButton ID="male" runat="server" GroupName="gender" AutoPostBack="true" Text="male" OnCheckedChanged="rb_CheckedChanged" />
+            <asp:RadioButton ID="female" runat="server" GroupName="gender" AutoPostBack="true" Text="female" OnCheckedChanged="rb_CheckedChanged" />
+            <asp:Button ID="btn" runat="server" OnClick="btn_Click" Text="Submit"></asp:Button>
             <asp:Label ID="prem" runat="server"></asp:Label>
         </div>
     </form>

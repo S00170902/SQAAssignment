@@ -49,13 +49,13 @@ namespace SQAAssignment {
         protected global::System.Web.UI.WebControls.RadioButton female;
         
         /// <summary>
-        /// submit control.
+        /// btn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submit;
+        protected global::System.Web.UI.WebControls.Button btn;
         
         /// <summary>
         /// prem control.

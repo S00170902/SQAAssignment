@@ -22,11 +22,15 @@ namespace SQAAssignment
         {
             RadioButton g = sender as RadioButton;
             genderInput = g.Text;
+
+            System.Diagnostics.Debug.WriteLine(genderInput);
         }
 
-        protected void submit_Click(object sender, EventArgs e)
+        protected void btn_Click(object sender, EventArgs e)
         {
+
             string a = age.Text;
+            System.Diagnostics.Debug.WriteLine(a);
             int ageInput = int.Parse(a);
 
             float premium = ins.CalcPremium(ageInput, genderInput);
