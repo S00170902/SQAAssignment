@@ -1,0 +1,16 @@
+!define COMMAND_PATTERN {%m -r fitnesse.fitserver.FitServer,dotnet2\fit.dll %p}
+!define TEST_RUNNER {dotnet2\Runner.exe}
+# this is the path to the fixture code
+!path C:\Users\hp\source\repos\SQAAssignment\SQAAssignment\bin\SQAAssignment.dll
+
+!| SQAAssignment.FitnesseTestClass |
+| gender | age | premium? |
+| female | 13 | 0 |
+| female | 25 | 5 |
+| female | 35 | 3.50 |
+| female | 60 | 0.375 |
+| male | 16 | 0 |
+| male | 30 | 6 |
+| male | 40 | 5 |
+| male | 55 | 0.75 |
+| xyz | 4 | 0 |
